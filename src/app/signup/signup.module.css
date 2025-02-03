@@ -198,10 +198,12 @@
 .ssoSection {
   text-align: center;
   margin: 24px 0;
-  p {
-    text-align: left;
-  }
 }
+
+.ssoSection :global(p) {
+  text-align: left;
+}
+
 
 .ssoSection p {
   color: #666;

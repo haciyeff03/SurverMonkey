@@ -183,13 +183,12 @@
   }
 
   @media (max-width: 600px) {
-    width: 50px;
-
-    img {
+    .ssoGridItem img {
       width: 20px;
       height: 20px;
     }
-  }
+}
+
 }
 
 .ssoIconWrapper {
