@@ -3,17 +3,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #f7f7f7;
-  padding: 16px;
+  padding:0 15px;
 }
+
 
 .logoContainer {
   margin: 20px 0;
+ 
 }
 
 .loginBox {
   background: white;
-  padding: 32px;
+  padding: 20px 30px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -41,7 +44,7 @@
 .title {
   font-size: 38px;
   color: #333;
-  margin-bottom: 24px;
+  margin-bottom:10px;
   font-weight: 500;
 }
 
@@ -129,7 +132,7 @@
 
 .ssoSection {
   text-align: center;
-  margin: 24px 0; 
+  margin:0; 
  
 }
 
