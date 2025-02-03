@@ -131,17 +131,12 @@
   text-align: center;
  
 }
-.ssoSection p {
- 
-    text-align: left;
-  
-}
-
 
 .ssoSection p {
   color: #666;
   margin-bottom: 10px;
   font-size: 16px;
+  text-align: left;
 }
 
 .ssoButton {
@@ -167,17 +162,10 @@
   text-align: center;
   margin: 24px 0;
 
-  p {
-    text-align: left;
-  }
+  
 }
 
-.ssoSection p {
-  color: #666;
-  margin-bottom: 18px;
-  font-size: 14px;
-  font-weight: 600;
-}
+
 
 .ssoGrid {
   display: flex;
