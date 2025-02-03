@@ -129,6 +129,7 @@
 
 .ssoSection {
   text-align: center;
+  margin: 24px 0; 
  
 }
 
@@ -158,14 +159,6 @@
 .ssoButton:hover {
   border-color: #00bf6f;
 }
-.ssoSection {
-  text-align: center;
-  margin: 24px 0;
-
-  
-}
-
-
 
 .ssoGrid {
   display: flex;
