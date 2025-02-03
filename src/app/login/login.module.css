@@ -133,7 +133,7 @@
  
 }
 
-.ssoSection p {
+.ssoSection :global(p) {
   color: #666;
   margin-bottom: 10px;
   font-size: 16px;
