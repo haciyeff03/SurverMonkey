@@ -1,0 +1,281 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 16px;
+}
+
+.logoContainer {
+  margin: 20px 0;
+}
+
+.loginBox {
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+}
+
+.signupLink {
+  text-align: right;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 16px;
+}
+
+.signupLink a {
+  color: #00bf6f;
+  text-decoration: none;
+  margin-left: 4px;
+  font-weight: 500;
+}
+
+.signupLink a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 38px;
+  color: #333;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #00bf6f;
+  box-shadow: 0 0 0 2px rgba(0, 191, 111, 0.1);
+}
+
+.inputGroup input.inputError:focus {
+  border-color: #e60023;
+  box-shadow: 0 0 0 2px rgba(230, 0, 35, 0.1);
+}
+
+.inputError {
+  border-color: #e60023 !important;
+}
+
+.errorMessage {
+  display: flex;
+  align-items: center;
+  color: #e60023;
+  font-size: 12px;
+  margin-top: 8px;
+  gap: 6px;
+}
+
+.errorIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  background-color: #e60023;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.buttonDisabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.nextButton {
+  width: 100%;
+  padding: 14px;
+  background-color: #00bf6f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 32px;
+  transition: background-color 0.2s;
+}
+
+.nextButton:hover {
+  background-color: #00a861;
+}
+
+.ssoSection {
+  text-align: center;
+  p {
+    text-align: left;
+  }
+}
+
+.ssoSection p {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.ssoButton {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: border-color 0.2s;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.ssoButton:hover {
+  border-color: #00bf6f;
+}
+.ssoSection {
+  text-align: center;
+  margin: 24px 0;
+
+  p {
+    text-align: left;
+  }
+}
+
+.ssoSection p {
+  color: #666;
+  margin-bottom: 18px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ssoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.ssoGridItem {
+  min-width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  @media (min-width: 600px) {
+    flex: 1;
+  }
+
+  @media (max-width: 600px) {
+    width: 50px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.ssoIconWrapper {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s;
+}
+
+.ssoGridItem:hover .ssoIconWrapper {
+  border-color: #00bf6f;
+}
+
+.ssoGridItem span {
+  color: #505050;
+  font-size: 14px;
+
+  @media (max-width: 600px) {
+    font-size: 11px;
+  }
+}
+
+.ssoGridItem .ssoIconWrapper img {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+@media (max-width: 600px) {
+  .loginBox {
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .signupLink {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .inputGroup label {
+    font-size: 14px;
+  }
+
+  .inputGroup input {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .errorMessage {
+    font-size: 12px;
+  }
+
+  .nextButton {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .ssoButton {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .ssoSection p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}
