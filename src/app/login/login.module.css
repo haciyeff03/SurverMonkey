@@ -129,10 +129,14 @@
 
 .ssoSection {
   text-align: center;
-  p {
-    text-align: left;
-  }
+ 
 }
+.ssoSection p {
+ 
+    text-align: left;
+  
+}
+
 
 .ssoSection p {
   color: #666;
