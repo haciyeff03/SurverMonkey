@@ -150,7 +150,7 @@
 }
 
 .checkbox:hover .checkmark {
-  border-color: #00bf6f;
+  border-color: #3d4852d4;
 }
 
 .checkmark.checked {
@@ -211,7 +211,7 @@
 
 .ssoSection {
   text-align: center;
-  margin: 24px 0;
+  margin: 12px 0;
 }
 
 .ssoSection :global(p) {
@@ -221,8 +221,8 @@
 
 .ssoSection p {
   color: #666;
-  margin-bottom: 24px;
-  font-size: 15px;
+  margin-bottom: 12px;
+  font-size: 14px;
 }
 
 .ssoGrid {
@@ -268,7 +268,7 @@
 }
 
 .ssoGridItem:hover .ssoIconWrapper {
-  border-color: #00bf6f;
+  border-color: #333E48;
 }
 
 .ssoGridItem span {

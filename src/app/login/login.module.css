@@ -168,7 +168,7 @@
 }
 
 .ssoButton:hover {
-  border-color: #00bf6f;
+  border-color: #333E48;
 }
 
 .ssoGrid {
@@ -214,7 +214,7 @@
 }
 
 .ssoGridItem:hover .ssoIconWrapper {
-  border-color: #00bf6f;
+  border-color: #333E48;
 }
 
 .ssoGridItem span {
