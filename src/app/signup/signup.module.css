@@ -10,14 +10,16 @@
 
 .logoContainer {
   margin: 0px 230px 40px 0;
- 
+
 }
+
 @media (max-width:991px) {
   .logoContainer {
     margin: 30px 20px 30px 0;
-   
+
   }
 }
+
 .loginLink .link {
   color: #007faa;
   font-weight: 400;
@@ -34,7 +36,7 @@
 
 .loginLink {
   text-align: right;
-  margin-bottom: 15px;  
+  margin-bottom: 15px;
   color: #333;
   font-size: 16px;
 }
@@ -53,7 +55,7 @@
 .title {
   font-size: 38px;
   color: #333;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 
@@ -154,19 +156,22 @@
 }
 
 @media (max-width:991px) {
- .ssoSection  {
+  .ssoSection {
     display: none;
   }
 }
+
 .signupBox .mobile_google {
-  display:none ;
+  display: none;
 }
+
 @media (max-width:991px) {
   .signupBox .mobile_google {
-    display:flex ;
+    display: flex;
     width: 100%;
   }
 }
+
 .mobile_google {
   display: none;
   width: 100%;
@@ -176,55 +181,56 @@
 }
 
 @media (max-width: 991px) {
-    .ssoSection {
-        display: none;
-    }
+  .ssoSection {
+    display: none;
+  }
 
-    .mobile_google {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
+  .mobile_google {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 
-    .mobile_google .icon {
-        width: 100%;
-        padding: 12px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        justify-content: center;
-        border-radius: 4px;
-        border: 1px solid #ddd;
-        background-color: white;
-        transition: border-color 0.2s;
-    }
+  .mobile_google .icon {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: white;
+    transition: border-color 0.2s;
+  }
 
-    .mobile_google .icon:hover {
-        border-color: #333E48;
-    }
+  .mobile_google .icon:hover {
+    border-color: #333E48;
+  }
 
-    .mobile_google .icon .text {
-        display: flex;
-        align-items: center;
-    }
+  .mobile_google .icon .text {
+    display: flex;
+    align-items: center;
+  }
 
-    .mobile_google .icon .text_icon {
-        color: #333e48;
-        font-size: 15px;
-        font-weight: 500;
-    }
+  .mobile_google .icon .text_icon {
+    color: #333e48;
+    font-size: 15px;
+    font-weight: 500;
+  }
 }
 
 @media (max-width: 480px) {
-    .mobile_google {
-        padding: 0;
-    }
+  .mobile_google {
+    padding: 0;
+  }
 }
 
 .mobile_google .icon .text_icon {
   color: #333e48;
   font-size: 16px;
 }
+
 .checkmark.checked {
   background-color: #00bf6f;
   border-color: #00bf6f;
@@ -322,8 +328,8 @@
 
   @media (max-width: 600px) {
     .ssoGridItem img {
-        width: 20px;
-        height: 20px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
