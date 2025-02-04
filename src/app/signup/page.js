@@ -187,22 +187,24 @@ export default function Signup() {
                             </button>
                         </div>
                     </div>
-                </div>
 
-                <div className={styles.mobile_google}>
-                    <button className={styles.icon}>
-                    <div className={styles.text}>
+                    <div className={styles.mobile_google}>
+                        <button className={styles.icon}>
+                            <div className={styles.text}>
                                 <Image src="/images/google_logo.svg" alt="Apple" width={26} height={26} />
                             </div>
                             <span className={styles.text_icon}>Register via Google</span>
-                    </button>
-                    <button className={styles.icon}>
-                    <div className={styles.text}>
+                        </button>
+                        <button className={styles.icon}>
+                            <div className={styles.text}>
                                 <Image src="/images/apple_logo.svg" alt="Apple" width={26} height={26} />
                             </div>
                             <span className={styles.text_icon}>Register via Apple</span>
-                    </button>
+                        </button>
+                    </div>
                 </div>
+
+                
             </div>
             <FooterLinks />
         </>
