@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import useSignupStore from '@/store/signupStore';
 import styles from './password.module.css';
+import FooterLinks from '@/components/FooterLinks';
 
 export default function CreatePassword() {
     const router = useRouter();
@@ -78,80 +79,83 @@ export default function CreatePassword() {
     };
 
     return (
-        <div className={styles.container}>
-            <div className={styles.logoContainer}>
-                <Image
-                    src="/images/logo.svg"
-                    alt="SurveyMonkey Logo"
-                    width={250}
-                    height={38}
-                    priority
-                />
-            </div>
-
-            <div className={styles.passwordBox}>
-                <button
-                    className={styles.backButton}
-                    onClick={() => router.push('/signup')}
-                >
-                    ← Back
-                </button>
-
-                <h1 className={styles.title}>Create a password</h1>
-
-                <div className={styles.emailDisplay}>
-                    {email}
+        <>
+            <div className={styles.container}>
+                <div className={styles.logoContainer}>
+                    <Image
+                        src="/images/logo.svg"
+                        alt="SurveyMonkey Logo"
+                        width={250}
+                        height={38}
+                        priority
+                    />
                 </div>
 
-                <form onSubmit={handleSubmit}>
-                    <div className={styles.inputGroup}>
-                        <label htmlFor="password">Enter password</label>
-                        <input
-                            type="password"
-                            id="password"
-                            value={password}
-                            onChange={handlePasswordChange}
-                            className={error ? styles.inputError : ''}
-                            required
-                        />
-                        {error && (
-                            <div className={styles.errorMessage}>
-                                <span className={styles.errorIcon}>!</span>
-                                {error}
-                            </div>
-                        )}
-                        <div className={styles.passwordHint}>
-                            Please enter at least 8 characters. Do not use common words, names, consecutive or repeated characters.
-                        </div>
-                    </div>
-
-                    <div className={styles.inputGroup}>
-                        <label htmlFor="confirmPassword">Confirm password</label>
-                        <input
-                            type="password"
-                            id="confirmPassword"
-                            value={confirmPassword}
-                            onChange={handleConfirmPasswordChange}
-                            className={confirmError ? styles.inputError : ''}
-                            required
-                        />
-                        {confirmError && (
-                            <div className={styles.errorMessage}>
-                                <span className={styles.errorIcon}>!</span>
-                                {confirmError}
-                            </div>
-                        )}
-                    </div>
-
+                <div className={styles.passwordBox}>
                     <button
-                        type="submit"
-                        className={`${styles.createButton} ${!isValid ? styles.buttonDisabled : ''}`}
-                        disabled={!isValid}
+                        className={styles.backButton}
+                        onClick={() => router.push('/signup')}
                     >
-                        Create an account
+                        ← Back
                     </button>
-                </form>
+
+                    <h1 className={styles.title}>Create a password</h1>
+
+                    <div className={styles.emailDisplay}>
+                        {email}
+                    </div>
+
+                    <form onSubmit={handleSubmit}>
+                        <div className={styles.inputGroup}>
+                            <label htmlFor="password">Enter password</label>
+                            <input
+                                type="password"
+                                id="password"
+                                value={password}
+                                onChange={handlePasswordChange}
+                                className={error ? styles.inputError : ''}
+                                required
+                            />
+                            {error && (
+                                <div className={styles.errorMessage}>
+                                    <span className={styles.errorIcon}>!</span>
+                                    {error}
+                                </div>
+                            )}
+                            <div className={styles.passwordHint}>
+                                Please enter at least 8 characters. Do not use common words, names, consecutive or repeated characters.
+                            </div>
+                        </div>
+
+                        <div className={styles.inputGroup}>
+                            <label htmlFor="confirmPassword">Confirm password</label>
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                value={confirmPassword}
+                                onChange={handleConfirmPasswordChange}
+                                className={confirmError ? styles.inputError : ''}
+                                required
+                            />
+                            {confirmError && (
+                                <div className={styles.errorMessage}>
+                                    <span className={styles.errorIcon}>!</span>
+                                    {confirmError}
+                                </div>
+                            )}
+                        </div>
+
+                        <button
+                            type="submit"
+                            className={`${styles.createButton} ${!isValid ? styles.buttonDisabled : ''}`}
+                            disabled={!isValid}
+                        >
+                            Create an account
+                        </button>
+                    </form>
+                </div>
             </div>
-        </div>
+            <FooterLinks />
+        </>
     );
 } 
