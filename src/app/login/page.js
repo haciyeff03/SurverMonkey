@@ -56,7 +56,7 @@ export default function Login() {
             <div className={styles.loginBox}>
                 <div className={styles.signupLink}>
                     <span>Don't have an account? </span>
-                    <Link href="/signup">Sign up</Link>
+                    <Link href="/signup" className={styles.link}>Sign up</Link>
                 </div>
 
                 <h1 className={styles.title}>Sign in</h1>

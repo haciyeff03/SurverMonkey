@@ -60,7 +60,7 @@ export default function Signup() {
             <div className={styles.signupBox}>
                 <div className={styles.loginLink}>
                     <span>Don't have an account? </span>
-                    <Link href="/login">Sign in</Link>
+                    <Link href="/login" className={styles.link}>Sign in</Link>
                 </div>
 
                 <h1 className={styles.title}>Create an account</h1>
@@ -95,20 +95,21 @@ export default function Signup() {
                             <div className={`${styles.checkmark} ${acceptTerms ? styles.checked : ''}`}>
                                 {acceptTerms && "✓"}
                             </div>
-                            <div className={styles.checkboxContent}>
-                                <span>You accept </span>
-                                <Link href="/terms" className={styles.link}>
+                            <div className={styles.checkboxContent} >
+                                <span style={{ color: '#007faa' }}>You accept </span>
+                                <Link href="/terms" className={styles.link} style={{ color: '#007faa' }}>
                                     Terms of Use
                                     <Image
                                         src="/external-link.svg"
                                         width={14}
                                         height={14}
                                         alt=""
-                                        className={styles.externalLink}
+                                        className={styles.externalLink} 
+                                      
                                     />
                                 </Link>
                                 <span> and </span>
-                                <Link href="/privacy" className={styles.link}>
+                                <Link href="/privacy" className={styles.link} style={{ color: '#007faa' }}>
                                     Privacy Notice
                                     <Image
                                         src="/external-link.svg"
@@ -118,7 +119,7 @@ export default function Signup() {
                                         className={styles.externalLink}
                                     />
                                 </Link>
-                                <span>.</span>
+                                <span style={{ color: '#007faa' }}>.</span>
                             </div>
                         </label>
                     </div>
