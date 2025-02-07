@@ -152,41 +152,7 @@ export default function Signup() {
                         </button>
                     </form>
 
-                    <div className={styles.ssoSection}>
-                        <p>Or register via</p>
-                        <div className={styles.ssoGrid}>
-                            <button className={styles.ssoGridItem}>
-                                <div className={styles.ssoIconWrapper}>
-                                    <Image src="/images/microsoft_logo.svg" alt="Microsoft" width={24} height={24} />
-                                </div>
-                                <span>Microsoft</span>
-                            </button>
-                            <button className={styles.ssoGridItem}>
-                                <div className={styles.ssoIconWrapper}>
-                                    <Image src="/images/facebook_logo.svg" alt="Facebook" width={26} height={26} />
-                                </div>
-                                <span>Facebook</span>
-                            </button>
-                            <button className={styles.ssoGridItem}>
-                                <div className={styles.ssoIconWrapper}>
-                                    <Image src="/images/linkedin_logo.svg" alt="LinkedIn" width={24} height={24} />
-                                </div>
-                                <span>LinkedIn</span>
-                            </button>
-                            <button className={styles.ssoGridItem}>
-                                <div className={styles.ssoIconWrapper}>
-                                    <Image src="/images/google_logo.svg" alt="Google" width={26} height={24} />
-                                </div>
-                                <span>Google</span>
-                            </button>
-                            <button className={styles.ssoGridItem}>
-                                <div className={styles.ssoIconWrapper}>
-                                    <Image src="/images/apple_logo.svg" alt="Apple" width={26} height={26} />
-                                </div>
-                                <span>Apple</span>
-                            </button>
-                        </div>
-                    </div>
+                 
 
                     <div className={styles.mobile_google}>
                         <button className={styles.icon}>

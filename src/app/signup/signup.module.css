@@ -161,29 +161,25 @@
   }
 }
 
-.signupBox .mobile_google {
-  display: none;
-}
 
-@media (max-width:991px) {
+
+
   .signupBox .mobile_google {
     display: flex;
     width: 100%;
   }
-}
+
 
 .mobile_google {
-  display: none;
+  
   width: 100%;
   margin: 30px auto;
-  padding: 0 16px;
+
   max-width: 480px;
 }
 
-@media (max-width: 991px) {
-  .ssoSection {
-    display: none;
-  }
+
+ 
 
   .mobile_google {
     display: flex;
@@ -218,7 +214,7 @@
     font-size: 15px;
     font-weight: 500;
   }
-}
+
 
 @media (max-width: 480px) {
   .mobile_google {

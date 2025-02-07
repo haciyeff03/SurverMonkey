@@ -171,6 +171,69 @@
   font-weight: 600;
 }
 
+
+.signupBox .mobile_google {
+  display: flex;
+  width: 100%;
+}
+
+
+.mobile_google {
+
+width: 100%;
+margin: 0px auto;
+
+max-width: 480px;
+}
+
+
+
+
+.mobile_google {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobile_google .icon {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+  transition: border-color 0.2s;
+}
+
+.mobile_google .icon:hover {
+  border-color: #333E48;
+}
+
+.mobile_google .icon .text {
+  display: flex;
+  align-items: center;
+}
+
+.mobile_google .icon .text_icon {
+  color: #333e48;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+@media (max-width: 480px) {
+.mobile_google {
+  padding: 0;
+}
+}
+
+.mobile_google .icon .text_icon {
+color: #333e48;
+font-size: 16px;
+}
 .ssoButton:hover {
   border-color: #333E48;
 }
