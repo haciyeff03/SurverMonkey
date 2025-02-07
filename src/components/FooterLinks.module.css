@@ -3,9 +3,9 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 20px;
-    padding: 32px;
+    padding:0 32px;
     width: 100%;
-    margin: 0 auto;
+    margin: -50px  auto;
 }
 
 .footer a, .footer button {
