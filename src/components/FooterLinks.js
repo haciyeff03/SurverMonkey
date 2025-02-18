@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './FooterLinks.module.css';
 
+
 export default function FooterLinks() {
     return (
         <div className={styles.footer}>
